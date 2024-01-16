@@ -3,14 +3,14 @@
 ## About our website
 
 [Link to our layout]
-(http://)
+(https://www.figma.com/file/PfPUja8M8whiAJyuKPR0rf/group-figma?type=design&node-id=0-1&mode=design&t=gjdD5Gp8O3aXvTaK-0)
 
-### nimi
-- mitä tehnyt
-- 
-### nimi
+### Iiro
+- Has created base quidelines in vscode 
+- Has created header and footer
+### Lassi
 -
 -
-### nimi
+### Sami
 -
 -
