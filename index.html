@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Peten Pizza</title>
-        <link rel="stylesheet" href="css/style-lassi.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </head>
     <body> 
         
@@ -20,6 +21,8 @@
                 Yhteydenotto
             </p>
         </header>
+        <main>
+            
             <article>
                 <img class="article-images" src ="images/a.jpg" alt = "Pitsaa syövä mies">
                 <h1 class="id2">
@@ -31,8 +34,32 @@
                     <!--aaaa-->
                 </p>
             </article>
-    </body>
+            
+            <leftside class="container">
+                <p>sidebar</p>
+                <p>sidebar</p>
+                <p>sidebar</p>
+                <p>sidebar</p>
+            </leftside>
+
+            <form>
+                <p><strong>Feedback For Us</strong> </p>
+                <label for="Name">Name:</label><br>
+                <input type="text" id="Name" name="Name"><br><p></p>
+                <label for="Email">Email:</label><br>
+                <input type="text" id="email" name="email"><p></p>
+                <label> Birthday:
+                <input type="date" name="begin"
+                placeholder="dd-mm-yyyy" value=""
+                min="1925-01-01" max="2024-12-31"><p></p>           
+                <label for="Message">Message:</label><br>
+                <input type="text" id="messge" name="message"><p></p>
+                <p><button>Submit</button></p>
+              </form>
+        </main>
+    
     <footer>
+        <p><strong>Contacts</strong></p>
         <address>
             Ahlmannintie 35, 45160, Kouvola
         </address>
@@ -44,4 +71,6 @@
             <li>Twitter</li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>
