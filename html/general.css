@@ -1,12 +1,13 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: beige;
 
 }
 
 header{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: skyblue;
-    color: seashell;
+    background-color: lightseagreen;
+    color: white;
     text-align:center;
     padding: 20px;
     margin: -10px;
@@ -15,9 +16,12 @@ header{
 img{
     border: 5px solid black;
 }
+form{
+    margin: 30px;
+}
 
 main{
-    
+    flex: 1;
 
 
 }
@@ -30,4 +34,21 @@ footer{
     padding: 20px;
     margin: -10px;
     
+}
+.container{
+    margin-top: 10px;
+    margin-left: -10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: aqua;
+
+
+}
+.scontainer{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
 }
