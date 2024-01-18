@@ -1,0 +1,13 @@
+.img{
+    width: 200px;
+    padding: 20px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+h1{
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-spacing: 5px;
+}
