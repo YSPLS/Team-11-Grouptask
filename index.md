@@ -12,5 +12,5 @@
 -
 -
 ### Sami
--
--
+- Has created 'contacts' page to website
+- Has fixed footer problems
