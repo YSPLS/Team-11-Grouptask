@@ -9,8 +9,9 @@
 - Has created base quidelines in vscode 
 - Has created header and footer
 ### Lassi
--
--
+- Made 3 CSS files(menu, general, styles-lassi)
+- Made 2 websites (menu and index)
+- Started header and the footer and added items like buttons and logo to it
 ### Sami
 - Has created 'contacts' page to website
 - Has fixed footer problems
