@@ -41,3 +41,9 @@ body{
     font-size: 20px;
     text-align: right;
 }
+footer{
+    background-color: firebrick;
+    padding: 30px;
+    margin-top: 270px;
+    
+}
