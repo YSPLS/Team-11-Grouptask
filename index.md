@@ -8,14 +8,15 @@
 ### Iiro
 - Has created base quidelines in vscode 
 - Created CSS files(styles-iiro, yhteydenotto)
-- Has made the pages look clean and fitting all together(headings, mains, footers)
+- Has made the pages look clean and fitting all together(headings, mains, footers) 
 - Has improved the look of the codes and improved the css sheets its finest
 - Finished the contacts and front page
+- Has created 1 page (info)
 ### Lassi
-- Made 3 CSS files(menu, general, styles-lassi)
-- Made 2 websites (menu and index)
+- Has created 3 CSS files(menu, general, styles-lassi)
+- Has created 2 pages (menu and index)
 - Started header and the footer and added items like buttons and logo to it
 ### Sami
-- Has created 'contacts' page to website
-- Has creted CSS file(styles-sami)
+- Has created page (yhteydenotto)
+- Has created CSS file(styles-sami)
 - Has fixed footer problems
