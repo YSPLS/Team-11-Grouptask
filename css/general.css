@@ -24,7 +24,7 @@ body{
 }
 .id1{
     display: inline-block ;
-    font-size:30px;
+    font-size:40px;
 }
 .id2{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -32,6 +32,11 @@ body{
     text-align: center;
 }
 .id3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: right;
+}
+.id4{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     text-align: right;
