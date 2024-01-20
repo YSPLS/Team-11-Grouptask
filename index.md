@@ -16,6 +16,8 @@
 - Has created 3 CSS files(menu, general, styles-lassi)
 - Has created 2 pages (menu and index)
 - Started header and the footer and added items like buttons and logo to it
+- Validated HTML and CSS files, fixed errors
+- SEO related work
 ### Sami
 - Has created page (yhteydenotto)
 - Has created CSS file(styles-sami)
