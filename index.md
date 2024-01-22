@@ -12,13 +12,16 @@
 - Has improved the look of the codes and improved the css sheets its finest
 - Finished the contacts and front page
 - Has created 1 page (info)
+- Upgraded figma pages
 ### Lassi
 - Has created 3 CSS files(menu, general, styles-lassi)
 - Has created 2 pages (menu and index)
 - Started header and the footer and added items like buttons and logo to it
 - Validated HTML and CSS files, fixed errors
 - SEO related work
+- Created figma layout
 ### Sami
 - Has created page (yhteydenotto)
 - Has created CSS file(styles-sami)
 - Has fixed footer problems
+- Upgraded figma pages
