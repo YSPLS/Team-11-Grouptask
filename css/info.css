@@ -60,6 +60,15 @@ body{
     font-size: 30px;
     text-align: center;
 }
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    margin-left: 120px;
+}
+
 footer{
     background-color: firebrick;
     padding: 30px;

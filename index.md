@@ -25,3 +25,4 @@
 - Has created CSS file(styles-sami)
 - Has fixed footer problems
 - Upgraded figma pages
+- Has added 2 images to the Info-page using flexbox
