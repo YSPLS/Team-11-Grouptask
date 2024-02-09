@@ -1,7 +1,7 @@
 <?php
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 try{
-    $yhteys=mysqli_connect("db", "asiakas", "password", "trtkp_11");
+    $yhteys=mysqli_connect("db", "root", "password", "trtkp_11");
 }
 catch(Exception $e){
     header("Location:../html/yhteysvirhe.html");
