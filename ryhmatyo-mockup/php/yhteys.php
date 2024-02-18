@@ -1,10 +1,9 @@
 <?php
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 try{
-    $yhteys=mysqli_connect("db", "root", "password", "trtkp_11");
+    $yhteys=mysqli_connect("db", "root", "password", "trtkp_11"); //Yritetään yhdistää tietokantaan
 }
-catch(Exception $e){
-    header("Location:../html/yhteysvirhe.html");
+catch(Exception $e){  // Jos yhteys epäonnistuu, ohjelma sulkeutuu
     exit;
 }
 
