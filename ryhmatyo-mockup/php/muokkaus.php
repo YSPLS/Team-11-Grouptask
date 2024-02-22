@@ -1,9 +1,13 @@
 <?php
+include ("../html/header.html"); //Tuodaan header
+?>
 
+<?php
 $muokattava=isset($_GET["muokattava"]) ? $_GET["muokattava"] : "";
 
 //Jos tietoa ei ole annettu, palataan listaukseen
 if (empty($muokattava)){
+    header ("Location:poisto.php");
     exit;
 }
 
@@ -25,6 +29,7 @@ mysqli_stmt_execute($stmt);
 //metodilla mysqli_stmt_get_result($stmt);
 $tulos=mysqli_stmt_get_result($stmt);
 if (!$rivi=mysqli_fetch_object($tulos)){
+    header ("Location:poisto.php");
     exit;
 }
 ?>
@@ -33,15 +38,20 @@ if (!$rivi=mysqli_fetch_object($tulos)){
 <!-- Lomake sisältää php-osuuksia, joilla tulostetaan syötekenttiin luetun tietueen tiedot -->
 <!-- id-kenttä on readonly, koska sitä ei ole tarkoitus muuttaa -->
 
-<form action='./paivitakala.php' method='post'>
-id:<input type='text' name='id' value='<?php print $rivi->id;?>' readonly><br>
-laji:<input type='text' name='laji' value='<?php print $rivi->laji;?>'><br>
-paino:<input type='text' name='paino' value='<?php print $rivi->paino;?>'><br>
-<input type='submit' name='ok' value='ok'><br>
+<form action="paivita.php" method="post">
+    <label for="nimi">nimi</label>
+    <input type="text" name="nimi" value=""/>  <br> <!-- Luodaan nimi osio -->
+    <label for="viesti">viesti</label>
+<input type="text"  name="viesti" value=""/> <br> <!-- Luodaan sukunimi osio -->
+<input type="submit" name="button" value="lähetä"/> <!-- Luodaan nappi -->
+
 </form>
 
 <!-- loppuun uusi php-osuus -->
 <?php
 //Suljetaan tietokantayhteys
 mysqli_close($yhteys);
+?>
+<?php
+include ("../html/footer.html"); //Tuodaan footer.html
 ?>
