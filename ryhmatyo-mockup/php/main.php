@@ -1,11 +1,9 @@
 <?php
 include ("../html/header.html"); //Tuodaan header
 ?>
-
 <?php
 include ("../html/lomake.html"); //Tuodaan lomake
 ?>
-
 <?php
 if (isset ($_POST["nimi"])){ //Jos nimi ruutuun on annettu tietoa se tallennetaan "nimi" muuttujaan
     $nimi=$_POST["nimi"];
