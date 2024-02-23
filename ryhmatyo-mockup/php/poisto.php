@@ -36,7 +36,9 @@ $tulos=mysqli_query($yhteys, "SELECT * FROM viesti");
 
 print "<ol>";
 while ($rivi=mysqli_fetch_object($tulos)) {
-    print "<li>id=$rivi->id nimi=$rivi->nimi viesti=$rivi->viesti <a href='poisto.php?poistettava=".$rivi->id."'>Poista</a></li>";
+    print "<li>id=$rivi->id nimi=$rivi->nimi viesti=$rivi->viesti ".
+    "<a href='poisto.php?poistettava=".$rivi->id."'>Poista</a> 
+     <a href='muokkaus.php?muokattava=".$rivi->id."'>Muokkaa</a></li>";
 }
 print "</ol>";
 mysqli_close($yhteys);
