@@ -3,16 +3,16 @@ include ("../html/header.html"); //Tuodaan header
 ?>
 
 <?php
-$muokattava=isset($_GET["muokattava"]) ? $_GET["muokattava"] : "";
+if (isset($_GET["muokattava"])){
+    $muokattava=$_GET["muokattava"];
+}
 
-//Jos tietoa ei ole annettu, palataan listaukseen
 if (!isset($muokattava)){
-    header ("Location:poisto.php");
+    header("Location:poisto.php");
     exit;
 }
 
 $yhteys = mysqli_connect("db", "root", "password", "trtkp_11");
-
 // Testaa yhteys
 if (!$yhteys) {
     die("Yhteyden muodostaminen epäonnistui: " .mysqli_connect_error());
@@ -24,7 +24,6 @@ if (!$tietokanta) {
 }
 echo "Tietokanta OK"; // debug
 
-
 $sql="select * from viesti where id=?";
 $stmt=mysqli_prepare($yhteys, $sql);
 //Sijoitetaan muuttuja sql-lauseeseen
@@ -34,12 +33,8 @@ mysqli_stmt_execute($stmt);
 //Koska luetaan prepared statementilla, tulos haetaan 
 //metodilla mysqli_stmt_get_result($stmt);
 $tulos=mysqli_stmt_get_result($stmt);
-if (!$rivi=mysqli_fetch_object($tulos)){
+if ($rivi=mysqli_fetch_object($tulos)){
 ?>
-
-<!-- Lomake tavallisena html-koodina php tagien ulkopuolella -->
-<!-- Lomake sisältää php-osuuksia, joilla tulostetaan syötekenttiin luetun tietueen tiedot -->
-<!-- id-kenttä on readonly, koska sitä ei ole tarkoitus muuttaa -->
 
 <form action="paivita.php" method="post">
     <input  type='hidden' name='id' value='<?php print $rivi->id;?>'><br>
@@ -49,9 +44,11 @@ if (!$rivi=mysqli_fetch_object($tulos)){
     <input type="text"  name="viesti" value='<?php print $rivi->viesti;?>'><br> <!-- Luodaan sukunimi osio -->
     <input type="submit" name="button" value="lähetä"/> <!-- Luodaan nappi -->
 </form>
+
 <?php
 }
 ?>
+
 <?php
 include ("../html/footer.html"); //Tuodaan footer.html
 ?>

@@ -1,15 +1,11 @@
 <?php
 include ("../html/header.html"); //Tuodaan header
 ?>
-<?php
-include ("../html/lomake.html"); //Tuodaan lomake
-?>
 
 <?php
 if (isset($_GET["poistettava"])) {
     $poistettava=$_GET["poistettava"];
 }
-
 
 $yhteys = mysqli_connect("db", "root", "password", "trtkp_11");
 
@@ -32,7 +28,7 @@ if (isset($poistettava)) {
 }
 
 
-$tulos=mysqli_query($yhteys, "SELECT * FROM viesti");
+$tulos=mysqli_query($yhteys, "select * from viesti");
 
 print "<ol>";
 while ($rivi=mysqli_fetch_object($tulos)) {
